@@ -13,3 +13,6 @@ const hash = '5e7d28e2cfff93edefb2d15abad07ec5';
 
 const hacked = 'superhacker';
 
+function hash(str) {
+    return createHash('md5').update(str).digest('hex');
+}
